@@ -9,7 +9,7 @@ Ovaj projekt predstavlja završnu fazu izrade web aplikacije za vijesti, razvije
 * Registracija korisnika
 * Prijava i odjava korisnika
 * Administratorske ovlasti
-* Vremenska prognoza za francuske gradove (tečajna lista integrirana kroz API)
+* Tečaj EUR u KN i EUR u USD
 * REST API integracija
 * JSON obrada podataka
 
