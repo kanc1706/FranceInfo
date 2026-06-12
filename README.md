@@ -22,7 +22,7 @@ Ovaj projekt predstavlja završnu fazu izrade web aplikacije za vijesti, razvije
 * JSON
 
 ## Video demonstracije projekta
-[YouTube - FranceInfo Demo](https://youtu.be/GeV02jCDghg)
+[YouTube - FranceInfo Demo]([https://youtu.be/GeV02jCDghg](https://youtu.be/zJ3j3l7sfCo))
 
 ## Pokretanje projekta
 1. Kopirati projekt u `htdocs` direktorij XAMPP-a.
