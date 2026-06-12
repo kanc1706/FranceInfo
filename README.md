@@ -20,9 +20,9 @@ Ovaj projekt predstavlja završnu fazu izrade web aplikacije za vijesti, razvije
 * CSS3
 * REST API 
 * JSON
-
+  
 ## Video demonstracije projekta
-[YouTube - FranceInfo Demo]([https://youtu.be/zJ3j3l7sfCo])
+[Pogledaj demo na YouTube-u](https://youtu.be/zJ3j3l7sfCo)
 
 ## Pokretanje projekta
 1. Kopirati projekt u `htdocs` direktorij XAMPP-a.
