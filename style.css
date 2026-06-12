@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.logo span {
+    color: #f5a623;
+}
+
+nav {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f5a623;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.kategorija {
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.kategorija:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.kategorija:last-of-type {
+    padding-bottom: 0;
+}
+
+.kategorija h1 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.vijesti {
+    display: grid;
+    gap: 20px;
+}
+
+#elections .vijesti {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#les-jt .vijesti {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.kartica {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kartica:hover {
+    transform: translateY(-5px);
+}
+
+.kartica img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.kartica a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: bold;
+    display: block;
+}
+
+.clanak-main {
+    max-width: 900px;
+}
+
+.glavni-clanak {
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.kategorija-tag {
+    color: #f5a623;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.clanak-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.clanak-header h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #111;
+}
+
+.podnaslov {
+    font-size: 18px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.sadrzaj-clanka {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.sadrzaj-clanka h2 {
+    margin: 40px 0 20px 0;
+    font-size: 22px;
+    color: #111;
+}
+
+.sadrzaj-clanka p {
+    margin-bottom: 20px;
+}
+
+.forma-kontejner {
+    max-width: 650px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.form-item {
+    margin-bottom: 25px;
+}
+
+.form-item label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #555555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-field-textual {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease;
+}
+
+.form-field-textual:focus {
+    outline: none;
+    border-color: #f5a623;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(245, 166, 35, 0.15);
+}
+
+textarea.form-field-textual {
+    resize: vertical;
+}
+
+.input-text {
+    font-size: 14px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background-color: #f3f4f6;
+    color: #374151;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-right: 15px;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #e5e7eb;
+}
+
+.gumbi {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f0f0f0;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #f5a623;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #df9116;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(223, 145, 22, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button[type="reset"] {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
+
+button[type="reset"]:hover {
+    background-color: #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: right;
+    padding: 40px 80px;
+    margin-top: auto;
+    font-size: 12px;
+    color: #888;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+}
+
+@media (max-width: 1024px) {
+    #elections .vijesti {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #les-jt .vijesti {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav ul {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #elections .vijesti,
+    #les-jt .vijesti {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .clanak-header h1 {
+        font-size: 28px;
+    }
+    .forma-kontejner {
+        padding: 30px;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #elections .vijesti,
+    #les-jt .vijesti {
+        grid-template-columns: 1fr;
+    }
+    nav ul {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+    header {
+        text-align: center;
+    }
+    .forma-kontejner {
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .gumbi {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+}
